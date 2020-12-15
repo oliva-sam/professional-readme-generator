@@ -20,6 +20,7 @@ gif or screenshot here
 
 ## Contributors
 Samantha Oliva
+![GitHub profile link](https://github.com/username)
 
 ## License
 None 

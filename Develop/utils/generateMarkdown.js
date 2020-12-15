@@ -23,6 +23,7 @@ gif or screenshot here
 
 ## Contributors
 ${data.contribute_repo}
+![GitHub profile link](https://github.com/${data.username})
 
 ## License
 ${data.license} 
