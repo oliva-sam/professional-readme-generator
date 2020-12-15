@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const utils = require('./utils/generateMarkdown');
+const fs = require('fs');
 
 // array of questions for user
 const questions = [
@@ -68,8 +69,13 @@ function init() {
         },
     ])
     .then((answer) => {
-        let readMetext = utils(answer)
-        console.log(readMetext)
+        let readMetext = utils(answer);
+        console.log(readMetext);
+        fs.writeFileSync("README.md", readMetext, function(err) {
+            if (err) throw err
+            console.log("File Generated")
+        });
+        console.log("generating README...")
     });
 }
 

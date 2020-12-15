@@ -1,12 +1,12 @@
-const fs = require('fs');
-
 // function to generate markdown for README
 function generateMarkdown(data) {
   console.log(data)
   let readMe = `
 # ${data.project_name}
+
 ## Description
 ${data.about_repo}
+
 ### Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
