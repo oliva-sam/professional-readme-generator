@@ -13,7 +13,7 @@ ${data.about_repo}
 * [Contributors](#contributors)
 * [License](#license)
 * [Test](#test)
-* [Contact](contact)
+* [Contact](#contact)
 
 ## Installation
 ${data.dependencies_command}
