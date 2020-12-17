@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data)
-  let readMe = `
+let readMe = 
+`
 # ${data.project_name}
 
 ## Description
@@ -19,7 +19,7 @@ ${data.about_repo}
 ${data.dependencies_command}
 
 ## Usage
-gif or screenshot here
+(insert gif or screenshot here)
 
 ## Contributors
 ${data.contribute_repo}
@@ -36,10 +36,11 @@ ${data.test_command}
 If you have any questions feel free to reach me at
 ${data.email}
 
-  `
-  return readMe
+`
+return readMe
 
 ;
 }
 
+// send the function generateMarkdown to where it's going to be required in index.js
 module.exports = generateMarkdown;

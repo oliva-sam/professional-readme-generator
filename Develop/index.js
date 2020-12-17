@@ -1,5 +1,10 @@
+// npm inquirer used for CLI
 const inquirer = require("inquirer");
+
+// linking to the js file with the layout the of README 
 const utils = require('./utils/generateMarkdown');
+
+// needed to talk to file system 
 const fs = require('fs');
 
 // array of questions for user
@@ -13,10 +18,6 @@ const questions = [
     "What does the user need to know about using the repo?",
     "What does the user need to know about contributing to the repo?"
 ];
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
 
 // function to initialize program
 function init() {
@@ -68,13 +69,13 @@ function init() {
             default: "Samantha Oliva"
         },
     ])
+    // Writing to readME
     .then((answer) => {
         let readMetext = utils(answer);
         fs.writeFileSync("README.md", readMetext, function(err) {
             if (err) throw err
-            console.log("File Generated")
         });
-        console.log("generating README...")
+        console.log("File Generated")
     });
 }
 
