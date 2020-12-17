@@ -23,7 +23,7 @@ ${data.dependencies_command}
 
 ## Contributors
 ${data.contribute_repo}
-![GitHub profile link](https://github.com/${data.username})
+[GitHub profile link](https://github.com/${data.username})
 
 ## License
 ${data.license} 
